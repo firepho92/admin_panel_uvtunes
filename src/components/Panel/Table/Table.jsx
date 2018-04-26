@@ -15,7 +15,7 @@ class Table extends Component {
                 </thead>
                 <tbody>
                     {this.props.table.data.map(row => {
-                        return <tr key={row[Object.keys(row)[0]]}><TableRows row = {row} /></tr>;
+                        return <tr key={row[Object.keys(row)[0]] + row[Object.keys(row)[1]]}><TableRows row = {row} /></tr>;
                     })}
                 </tbody>
             </table>
